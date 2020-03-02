@@ -25,6 +25,7 @@ Projet Django
       if settings.DEBUG :
           urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
           urlpatterns += static(settings.STATIC_URL, document_root = settings.STATIC_ROOT)
+
           
  # Exemple admin.py 
       from django.contrib import admin
@@ -128,3 +129,58 @@ Projet Django
           list_per_page = 5
           ordering = ('nom',)
 
+
+
+## creation d'environnement virtuel sur linux
+# Installer virtualenv
+      pip install virtualenv
+
+# Acceder au dossier du projet
+     cd my_folder
+
+# Créer l'environnement virtuel  `venv`
+      virtualenv venv
+
+
+# Indiquer l'interpreteur (2.7) à utiliser pour notre environnement 'venv'
+      virtualenv -p /usr/bin/python2.7 venv
+
+# Activer `venv`
+      source venv/bin/activate
+
+# Désactiver `venv`
+       deactivate
+
+# Générer les bibliothéques utilisées
+      venv/bin/pip freeze > requirements.txt
+
+# Installer les bibliothèques automatiquement depuis le fichier 'requirements.txt' 
+      venv2/bin/pip install -r requirements.txt
+
+
+
+## creation d'environnement virtuel sur windows
+
+# Installer virtualenv
+       pip install virtualenv
+
+# Acceder au dossier du projet
+       cd my_folder
+
+# Créer l'environnement virtuel  `venv`
+       virtualenv venv
+
+# Indiquer l'interpreteur (2.7) à utiliser pour notre environnement 'venv'
+       virtualenv -p /usr/bin/python2.7 venv
+
+# Activer `venv`
+       venv\Scripts\activate
+
+# Désactiver `venv`
+       venv\Scripts\deactivate
+
+# Générer les bibliothéques utilisées
+      venv/bin/pip freeze > requirements.txt
+
+#Installer les bibliothèques automatiquement depuis le fichier 'requirements.txt' 
+      venv2/bin/pip install -r requirements.txt
