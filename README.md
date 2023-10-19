@@ -185,5 +185,9 @@ Projet Django
 #Installer les bibliothèques automatiquement depuis le fichier 'requirements.txt' 
       venv2/bin/pip install -r requirements.txt
       
-## Revision projet Django
+# Revision projet Django
 https://learndjango.com/tutorials/django-slug-tutorial
+
+# Installer autoSulgField
+https://pypi.org/project/django-autoslug/
+
