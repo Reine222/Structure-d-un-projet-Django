@@ -188,6 +188,8 @@ Projet Django
 # Revision projet Django
 https://learndjango.com/tutorials/django-slug-tutorial
 
+https://openclassrooms.com/fr/courses/7172076-debutez-avec-le-framework-django
+
 # Installer autoSulgField
 https://pypi.org/project/django-autoslug/
 
